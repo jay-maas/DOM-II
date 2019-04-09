@@ -167,6 +167,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 2%;
 }
 @media (max-width: 500px) {
   .container {
@@ -180,6 +181,7 @@ img {
   background: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
   position: fixed;
+  opacity: 0.9;
 }
 .main-navigation .nav-container {
   height: 100%;
