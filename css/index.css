@@ -363,6 +363,15 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .form-daddy {
+  padding: 2%;
+}
+.home .form-daddy .form-buttons {
+  padding: inherit;
+}
+.home .form-daddy .form-buttons2 {
+  padding: inherit;
+}
 .home .contact-form {
   display: flex;
   justify-content: center;

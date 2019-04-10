@@ -63,11 +63,11 @@ window.addEventListener('load', (event) => {
 
 
 //Submit #4
-const signupForm = document.querySelector('.signup-form')
-signupForm.addEventListener('submit', event => {
-  event.preventDefault()
-  alert("Thank You we will be in touch.")
-})
+// const signupForm = document.querySelector('.signup-form')
+// signupForm.addEventListener('submit', event => {
+//   event.preventDefault()
+//   alert("Thank You we will be in touch.")
+// })
 
 //hover #5
 let form = document.querySelector('.first-name');
@@ -117,4 +117,32 @@ button3.addEventListener('click', event => {
     }
 });
   
+// Stop the navigation from items from refreshing the page by using preventDefault()
+let cancelNav = document.querySelector('nav');
 
+cancelNav.addEventListener('click', function(event) {
+  event.preventDefault();
+  alert("You cannot escape!")
+});
+
+//Nest two similar events somewhere in the site and prevent the event propagation properly
+let formDaddy = document.querySelector(".form-daddy");
+let prop2 = document.querySelector(".prop2");
+
+formDaddy.addEventListener('click', (ev)=> {
+    alert("Thank you for selecting the right button.")
+    alert("Page Notice-event propagation halted");
+    ev.preventDefault();
+});
+
+prop2.addEventListener('click', (ev)=> {
+    prop2.textContent = "Propagation!";
+    ev.stopPropagation();
+    alert("Hi, you have chosen WRONG! MUAHAHA")
+    ev.preventDefault();
+});
+
+function load() {
+elem = document.querySelector(".form-buttons");
+elem.addEventListener("click", stopEvent, false);
+}
