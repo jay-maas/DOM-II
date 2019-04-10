@@ -363,3 +363,13 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .contact-form {
+  display: flex;
+  justify-content: center;
+}
+.home .contact-form .signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+}
