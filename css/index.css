@@ -239,6 +239,26 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.footer #demo {
+  width: 800px;
+  height: 120px;
+  background-color: #FFEBCD;
+  padding: 8px;
+}
+.footer #logo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: #FFEBCD url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo_transparent_1.png) no-repeat;
+  background-position: 0px 4px;
+  color: #FFEBCD;
+}
+.footer #logo p {
+  font-size: 17px;
+  margin-top: 0px;
+  margin-left: 60px;
+  line-height: 58px;
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;

@@ -58,7 +58,7 @@ document.addEventListener('keydown', function move(e) {
     
 //Load #3
 window.addEventListener('load', (event) => {
-    alert('Enjoy the Fun Bus. Use WASD to drive the BUS!');
+    alert('Enjoy the Fun Bus. Use WASD to drive the BUS! Scroll to the bottom and click the GSAP hero!');
 });
 
 
@@ -146,3 +146,11 @@ function load() {
 elem = document.querySelector(".form-buttons");
 elem.addEventListener("click", stopEvent, false);
 }
+
+//Some GSAP
+
+var logo = document.getElementById("logo");
+
+logo.addEventListener('click',  (ev) => {
+    TweenMax.from("#logo", 3, {x:800, opacity:0, scale:0.5});
+  });
