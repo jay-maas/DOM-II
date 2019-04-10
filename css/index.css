@@ -169,6 +169,17 @@ img {
   margin: 0 auto;
   padding: 2%;
 }
+.container .bus-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container .bus-container .bus {
+  position: relative;
+  width: 10%;
+  top: 100px;
+  opacity: 0.8;
+}
 @media (max-width: 500px) {
   .container {
     width: 90%;
@@ -236,21 +247,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.home .intro .driveMe {
-  position: fixed;
-  bottom: 0;
-  left: -20%;
-}
-.home .intro .driveMe .bus {
-  width: 50%;
-  height: 50%;
-}
-.home .intro .driveMe .keyDown {
-  position: absolute;
-  left: 20%;
-  bottom: 0;
-}
-.home .intro h2 {
+.home h2 {
   margin-top: 20px;
 }
 .home .content-section {
